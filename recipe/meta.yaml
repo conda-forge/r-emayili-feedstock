@@ -1,4 +1,4 @@
-{% set version = '0.4.10' %}
+{% set version = "0.4.11" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/emayili_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/emayili/emayili_{{ version }}.tar.gz
-  sha256: 4107276ef16ef56ec3b6f9f29411eb09230355190a74df1c3ae2561d72d8126c
+  sha256: b8558912cd782dcd28ea69bcfc875422547e5bac0323f2813ba340581ab7970d
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -34,6 +34,7 @@ requirements:
     - r-mime
     - r-purrr
     - r-stringi
+    - r-stringr
   run:
     - r-base
     - r-base64enc
@@ -44,6 +45,7 @@ requirements:
     - r-mime
     - r-purrr
     - r-stringi
+    - r-stringr
 
 test:
   commands:
@@ -56,7 +58,7 @@ about:
   summary: A light, simple tool for sending emails with minimal dependencies.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
