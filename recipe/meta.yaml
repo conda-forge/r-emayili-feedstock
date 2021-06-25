@@ -34,6 +34,7 @@ requirements:
     - r-mime
     - r-purrr
     - r-stringi
+    - r-stringr
   run:
     - r-base
     - r-base64enc
@@ -44,6 +45,7 @@ requirements:
     - r-mime
     - r-purrr
     - r-stringi
+    - r-stringr
 
 test:
   commands:
