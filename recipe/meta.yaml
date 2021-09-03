@@ -28,6 +28,7 @@ requirements:
     - r-base
     - r-base64enc
     - r-curl >=4.0
+    - r-dplyr
     - r-glue
     - r-httr
     - r-magrittr
@@ -35,10 +36,14 @@ requirements:
     - r-purrr
     - r-stringi
     - r-stringr
+    - r-tibble
+    - r-tidyr
+    - r-vctrs
   run:
     - r-base
     - r-base64enc
     - r-curl >=4.0
+    - r-dplyr
     - r-glue
     - r-httr
     - r-magrittr
@@ -46,6 +51,9 @@ requirements:
     - r-purrr
     - r-stringi
     - r-stringr
+    - r-tibble
+    - r-tidyr
+    - r-vctrs
 
 test:
   commands:
