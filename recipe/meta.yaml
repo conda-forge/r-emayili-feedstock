@@ -1,4 +1,4 @@
-{% set version = "0.4.16" %}
+{% set version = "0.4.17" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/emayili_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/emayili/emayili_{{ version }}.tar.gz
-  sha256: e779565608a72937fb69fa1119bc26a0881758b4978f3f9e1ddda193d5206b5a
+  sha256: 2272ac531a278a25ea95cd6f00d016bdda3f2acef399ba2b947a20e8929ea78b
 
 build:
   merge_build_host: true  # [win]
@@ -28,6 +28,7 @@ requirements:
     - r-base
     - r-base64enc
     - r-curl >=4.0
+    - r-dplyr
     - r-glue
     - r-httr
     - r-magrittr
@@ -35,10 +36,14 @@ requirements:
     - r-purrr
     - r-stringi
     - r-stringr
+    - r-tibble
+    - r-tidyr
+    - r-vctrs
   run:
     - r-base
     - r-base64enc
     - r-curl >=4.0
+    - r-dplyr
     - r-glue
     - r-httr
     - r-magrittr
@@ -46,6 +51,9 @@ requirements:
     - r-purrr
     - r-stringi
     - r-stringr
+    - r-tibble
+    - r-tidyr
+    - r-vctrs
 
 test:
   commands:
