@@ -1,4 +1,4 @@
-{% set version = "0.4.18" %}
+{% set version = "0.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/emayili_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/emayili/emayili_{{ version }}.tar.gz
-  sha256: 02210a557df214207d1446f082f7c8f73de568d551c4f3a4fc25a1e636e7ae41
+  sha256: 9da5a4c6343a6410e5dd8e380ca2af5da47aa6c98f9d5ce841ab5fcda6abce84
 
 build:
   merge_build_host: true  # [win]
@@ -27,33 +27,47 @@ requirements:
   host:
     - r-base
     - r-base64enc
+    - r-commonmark
     - r-curl >=4.0
+    - r-digest
     - r-dplyr
     - r-glue
     - r-httr
+    - r-logger
     - r-magrittr
     - r-mime
     - r-purrr
-    - r-stringi
+    - r-rlang >=0.4.3
+    - r-rmarkdown
     - r-stringr
     - r-tibble
     - r-tidyr
+    - r-urltools
     - r-vctrs
+    - r-xfun
+    - r-xml2
   run:
     - r-base
     - r-base64enc
+    - r-commonmark
     - r-curl >=4.0
+    - r-digest
     - r-dplyr
     - r-glue
     - r-httr
+    - r-logger
     - r-magrittr
     - r-mime
     - r-purrr
-    - r-stringi
+    - r-rlang >=0.4.3
+    - r-rmarkdown
     - r-stringr
     - r-tibble
     - r-tidyr
+    - r-urltools
     - r-vctrs
+    - r-xfun
+    - r-xml2
 
 test:
   commands:
