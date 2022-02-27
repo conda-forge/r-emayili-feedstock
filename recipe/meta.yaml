@@ -32,18 +32,18 @@ requirements:
     - r-digest
     - r-dplyr
     - r-glue
+    - r-htmltools
     - r-httr
     - r-logger
     - r-magrittr
     - r-mime
     - r-purrr
-    - r-rlang >=0.4.3
     - r-rmarkdown
+    - r-rvest
+    - r-stringi
     - r-stringr
-    - r-tibble
     - r-tidyr
     - r-urltools
-    - r-vctrs
     - r-xfun
     - r-xml2
   run:
@@ -54,18 +54,18 @@ requirements:
     - r-digest
     - r-dplyr
     - r-glue
+    - r-htmltools
     - r-httr
     - r-logger
     - r-magrittr
     - r-mime
     - r-purrr
-    - r-rlang >=0.4.3
     - r-rmarkdown
+    - r-rvest
+    - r-stringi
     - r-stringr
-    - r-tibble
     - r-tidyr
     - r-urltools
-    - r-vctrs
     - r-xfun
     - r-xml2
 
