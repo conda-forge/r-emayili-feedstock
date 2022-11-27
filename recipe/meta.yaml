@@ -1,4 +1,4 @@
-{% set version = "0.7.11" %}
+{% set version = "0.7.13" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/emayili_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/emayili/emayili_{{ version }}.tar.gz
-  sha256: 1a6f009595b43d64a3a8ac49d930054bf46285b9066c0de22a299130d6963cf5
+  sha256: 9c7648ef0dcd7b8916ba725c4fb9e599a488af4c5e1200732fc7690b6788cd8e
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
