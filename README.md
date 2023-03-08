@@ -1,11 +1,11 @@
-About r-emayili
-===============
+About r-emayili-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-emayili-feedstock/blob/main/LICENSE.txt)
 
 Home: https://datawookie.github.io/emayili/
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-emayili-feedstock/blob/main/LICENSE.txt)
 
 Summary: A light, simple tool for sending emails with minimal dependencies.
 
