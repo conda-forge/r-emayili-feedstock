@@ -35,7 +35,7 @@ requirements:
     - r-htmltools
     - r-httr
     - r-logger
-    - r-magrittr
+    - r-magrittr >=2.0.1
     - r-mime
     - r-purrr
     - r-rmarkdown
@@ -57,7 +57,7 @@ requirements:
     - r-htmltools
     - r-httr
     - r-logger
-    - r-magrittr
+    - r-magrittr >=2.0.1
     - r-mime
     - r-purrr
     - r-rmarkdown
